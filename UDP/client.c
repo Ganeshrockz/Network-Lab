@@ -27,7 +27,6 @@ client.sin_port=htons(PORT);
 client.sin_addr.s_addr=INADDR_ANY;
 for(i=0;i<8;i++)
 client.sin_zero[i]='\0'; 
-int connectstatus=connect(sockid,(struct sockaddr*)&client,sizeof(struct sockaddr));
 int j;
 for(j=1;j<=5;j++)
 {
